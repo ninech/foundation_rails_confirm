@@ -16,16 +16,16 @@ Add it to your application.js:
 
 ## Usage
 
-  Your existing confirm dialogs will automatically use this library.
+Your existing confirm dialogs will automatically use this library.
 
-  To pass more information you can use these new options:
+To pass more information you can use these new options:
 
 * data-confirm-title (default: window.top.location.origin)
 * data-confirm-cancel (default: 'cancel')
 * data-confirm-proceed (default: 'ok')
 * data-confirm-proceed-class (default: 'proceed')
 
-  Usage Example:
+Usage Example:
 
     link_to t('.destroy'), some_item_path,
       :method => :delete,
