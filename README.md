@@ -27,15 +27,15 @@ Add it to your application.js:
 
   Usage Example:
 
-    link_to t('.destroy'), some_item_path,
-      :method => :delete,
-      :class => "button",
-      :confirm => t('.destroy_confirm.body', :item => options[:item]),
-      "data-confirm-title" => t('.destroy_confirm.title', :item => options[:item]),
-      "data-confirm-cancel" => t('.destroy_confirm.cancel', :item => options[:item]),
-      "data-confirm-proceed" => t('.destroy_confirm.proceed', :item => options[:item]),
-      "data-confirm-proceed-class" => "alert"
-    end
+      link_to t('.destroy'), some_item_path,
+        :method => :delete,
+        :class => "button",
+        :confirm => t('.destroy_confirm.body', :item => options[:item]),
+        "data-confirm-title" => t('.destroy_confirm.title', :item => options[:item]),
+        "data-confirm-cancel" => t('.destroy_confirm.cancel', :item => options[:item]),
+        "data-confirm-proceed" => t('.destroy_confirm.proceed', :item => options[:item]),
+        "data-confirm-proceed-class" => "alert"
+      end
 
 
 ## Contributing
