@@ -11,7 +11,7 @@ Add to Gemfile:
 
 Add it to your application.js:
 
-  //= require foundation_rails_confirm
+    //= require foundation_rails_confirm
 
 
 ## Usage
