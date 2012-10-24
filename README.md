@@ -1,0 +1,3 @@
+# Foundation Rails Confirm
+
+TODO
