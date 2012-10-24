@@ -11,31 +11,31 @@ Add to Gemfile:
 
 Add it to your application.js:
 
-  //= require foundation_rails_confirm
+    //= require foundation_rails_confirm
 
 
 ## Usage
 
-  Your existing confirm dialogs will automatically use this library.
+Your existing confirm dialogs will automatically use this library.
 
-  To pass more information you can use these new options:
+To pass more information you can use these new options:
 
 * data-confirm-title (default: window.top.location.origin)
 * data-confirm-cancel (default: 'cancel')
 * data-confirm-proceed (default: 'ok')
 * data-confirm-proceed-class (default: 'proceed')
 
-  Usage Example:
+Usage Example:
 
-      link_to t('.destroy'), some_item_path,
-          :method => :delete,
-          :class => "button",
-          :confirm => t('.destroy_confirm.body', :item => options[:item]),
-          "data-confirm-title" => t('.destroy_confirm.title', :item => options[:item]),
-          "data-confirm-cancel" => t('.destroy_confirm.cancel', :item => options[:item]),
-          "data-confirm-proceed" => t('.destroy_confirm.proceed', :item => options[:item]),
-          "data-confirm-proceed-class" => "alert"
-      end
+    link_to t('.destroy'), some_item_path,
+      :method => :delete,
+      :class => "button",
+      :confirm => t('.destroy_confirm.body', :item => options[:item]),
+      "data-confirm-title" => t('.destroy_confirm.title', :item => options[:item]),
+      "data-confirm-cancel" => t('.destroy_confirm.cancel', :item => options[:item]),
+      "data-confirm-proceed" => t('.destroy_confirm.proceed', :item => options[:item]),
+      "data-confirm-proceed-class" => "alert"
+    end
 
 
 ## Contributing
