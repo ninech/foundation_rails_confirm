@@ -4,10 +4,10 @@ $ ->
       <div id="confirmation_dialog" class="reveal-modal medium">
         <h3></h3>
         <p class="body">Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-        <p>
+        <div>
           <a href="#" class="secondary button cancel">Cancel</a>
           <a href="#" class="button proceed">Proceed</a>
-        </p>
+        </div>
         <a class="close-reveal-modal">&#215;</a>
       </div>
     '))
