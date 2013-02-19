@@ -1,16 +1,16 @@
 $ ->
   FoundationConfirmBox = (message, element, callback) ->
-    $(document.body).append($('
+    $(document.body).append('
       <div id="confirmation_dialog" class="reveal-modal medium">
         <h3></h3>
-        <p class="body">Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+        <p class="body"></p>
         <div>
           <a href="#" class="secondary button cancel">Cancel</a>
           <a href="#" class="button proceed">Proceed</a>
         </div>
         <a class="close-reveal-modal">&#215;</a>
       </div>
-    '))
+    ')
 
     $("#confirmation_dialog .body").html(message)
     $("#confirmation_dialog h3").html(element.data("confirm-title") || window.top.location.origin)
@@ -36,6 +36,5 @@ $ ->
     false
 
   $.rails.confirmed = (link) ->
-    console.log 'confirmed', link
     link.removeAttr('data-confirm')
     link.trigger('click.rails')
