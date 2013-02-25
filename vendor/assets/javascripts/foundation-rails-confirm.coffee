@@ -21,7 +21,7 @@ $ ->
     $("#confirmation_dialog .proceed").click ->
       $("#confirmation_dialog").trigger("reveal:close").remove()
       $.rails.confirmed(element)
-      callback()
+      callback() if callback?
       true
 
     $("#confirmation_dialog .cancel").click ->
